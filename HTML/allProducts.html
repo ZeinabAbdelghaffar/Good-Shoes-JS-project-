@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../CSS/allProducts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-pfUZW7UDfuuzH7tj9XrLo0ZaUjvq6e9/39z4MRU/vGs4z2I7xFuVoa9/N9o+kXeabf5/JF5bq2LF/F6AxiO4dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="navigation-wrap bg-light start-header start-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-1" id="logo-container">
+            <img class="logo" src="../ASSETS/img/logoo.png" alt="New Logo" />
+          </div>
+          <div class="col">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="landing.html">
+                      <img src="../ASSETS/img/icon/home.png" style="width: 23px" />
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4" id="dropdown">
+                    <a class="nav-link dropdown-toggle" href="allProducts.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img src="../ASSETS/img/icon/category.png" style="width: 20px" />
+                    </a>
+                    <div class="dropdown-content " aria-labelledby="navbarDropdown">
+                      <button id="men">Men</button>
+                      <button id="women">Women</button>
+                      <button id="kids">Kids</button>  
+                    </div>                
+                  </li>              
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="userProfile.html">
+                      <img src="../ASSETS/img/icon/user.png" style="width: 23px" />
+                    </a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a href="cart.html" class="nav-link cart">
+                      <img src="../ASSETS/img/icon/cart.png" style="width: 23px" />
+                    </a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a href="wishList.html" class="nav-link heart">
+                      <img src="../ASSETS/img/icon/heart.png" style="width: 22px" />
+                    </a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="aboutUs.html">
+                      <img src="../ASSETS/img/icon/contact.png" style="width: 23px" />
+                    </a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="orderHistory.html">
+                      <img src="../ASSETS/img/icon/order.png" style="width: 23px" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="container" id="second-part">
+      <div id="content" class="my-5">
+        <div class="search-box">
+          <button class="btn-search" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Search..."
+            id="search"
+          />
+        </div>
+          <div id="filterbar" class="col-md-5 order-md-1">
+              <div class="box border-bottom">
+                  <div class="box-label text-uppercase d-flex align-items-center">Filter by price
+                      <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box" aria-expanded="false" aria-controls="inner-box" id="out" >
+                          <span class="fas fa-plus"></span>
+                      </button>
+                  </div>
+                  <div id="inner-box" class="collapse mt-2 mr-1">
+                      
+                  </div>
+              </div>
+              <div class="box border-bottom">
+                  <div class="box-label text-uppercase d-flex align-items-center">Filter by size
+                      <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box2" aria-expanded="false" aria-controls="inner-box2">
+                          <span class="fas fa-plus"></span>
+                      </button>
+                  </div>
+                  <div id="inner-box2" class="collapse mt-2 mr-1">
+                  </div>
+              </div>
+              <div class="box border-bottom">
+                <div class="box-label text-uppercase d-flex align-items-center">Filter by color
+                    <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box3" aria-expanded="false" aria-controls="inner-box3">
+                        <span class="fas fa-plus"></span>
+                    </button>
+                </div>
+                <div id="inner-box3" class="collapse mt-2 mr-1">
+                </div>
+            </div>
+
+          </div>
+          <div id="products" class="col-md-9 order-md-1">
+          </div>
+      </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/471621b790.js" crossorigin="anonymous"></script>
+    <script type="module" src="../JS/allProducts.js"></script>
+  </body>
+</html>
